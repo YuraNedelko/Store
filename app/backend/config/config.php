@@ -6,8 +6,8 @@ return array(
     'defaultAction' => 'HomeController@index',
     'mail' => [
         'SMTP' => 'smtp.gmail.com',
-        'username' => 'nedelkoyura@gmail.com',
-        'password' => '518230ep130495',
+        'username' => '',
+        'password' => '',
         'port' => '587'
     ]
 );

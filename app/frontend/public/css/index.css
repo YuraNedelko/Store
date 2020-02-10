@@ -1,0 +1,7 @@
+#book-container {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

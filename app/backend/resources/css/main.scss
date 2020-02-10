@@ -1,0 +1,94 @@
+.book-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-left: none;
+  margin-bottom: -1px;
+
+  .book-table-cell {
+    text-align: center;
+    border-left: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .book-description {
+      word-break: break-word;
+      overflow-y: auto !important;
+      overflow-x: hidden;
+      height: 40px;
+      margin: 5px 0 5px 0;
+    }
+  }
+
+  .without-border {
+    border: 2px solid white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    margin: 5px 0 5px 0;
+  }
+}
+
+.create-button {
+  margin-top: 40px;
+  display: block;
+
+  button {
+    width: 100%;
+  }
+}
+
+.edit-form {
+  width: 70%;
+
+  label, input, div, textarea {
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    min-height: 30px;
+  }
+
+  label {
+    margin-top: 15px;
+  }
+
+  input[type=submit] {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .checkbox-input {
+    height: auto;
+    display: initial;
+    width: auto;
+  }
+
+  .checkbox-label {
+    display: inline;
+    margin: 0;
+  }
+
+  .validation-error {
+    font-size: 15px;
+    color: red;
+  }
+}
+
+.book_pagination{
+  margin-top: 40px;
+}

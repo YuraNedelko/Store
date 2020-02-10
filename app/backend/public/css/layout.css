@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    line-height: 1.15 !important;
+    overflow: auto;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 20px !important;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.footer-content {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 30px;
+    color: white;
+}
+
+.flash-container {
+    position: absolute !important;
+    top: 50%;
+    width: 400px;
+    z-index: 999;
+    left: calc(50% - 150px)
+}
+
+.notification-date, .notification-text {
+    text-align: center;
+}
+
+.notification-date > span {
+    display: block;
+    word-break: break-word;
+}

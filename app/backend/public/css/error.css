@@ -1,0 +1,12 @@
+.error-div {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}

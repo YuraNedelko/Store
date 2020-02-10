@@ -62,10 +62,10 @@ class Book extends Model
         $whereClause = '';
 
         if(isset($query['author']) && $query['author']){
-            $authorQuery = " RIGHT JOIN book_author AS proxyAuthor on books.id = proxyAuthor.books_id RIGHT JOIN authors on proxyAuthor.authors_id = authors.id";
+            $authorQuery = " RIGHT JOIN book_author AS proxyAuthor on books.id = proxyAuthor.books_id LEFT JOIN authors on proxyAuthor.authors_id = authors.id";
         }
         if(isset($query['genre']) && $query['genre']){
-            $genreQuery = " RIGHT JOIN book_genre AS proxyGenre on books.id = proxyGenre.books_id RIGHT JOIN genres on proxyGenre.genres_id = genres.id ";
+            $genreQuery = " RIGHT JOIN book_genre AS proxyGenre on books.id = proxyGenre.books_id LEFT JOIN genres on proxyGenre.genres_id = genres.id ";
         }
 
         if(isset($query['author']) && $query['author']){

@@ -68,11 +68,13 @@ class BookList extends Component {
 
     handleAuthorChange(e){
         this.props.dispatch(selectedAuthorChanged(e.target.value));
+        this.props.dispatch(currentPageSelected(0));
         this.fetchBooks(null,  e.target.value);
     }
 
     handleGenreChange(e){
         this.props.dispatch(selectedGenreChanged(e.target.value));
+        this.props.dispatch(currentPageSelected(0));
         this.fetchBooks(null, null, e.target.value);
     }
 

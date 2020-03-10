@@ -8,3 +8,5 @@ What to do: <br>
 4.) enter required "mail" and "adminEmail" parameters at app\frontend\config; <br>
 5.) run sql dump; <br>
 6.) enter database parameters at app\common\config;
+
+

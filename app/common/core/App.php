@@ -246,7 +246,7 @@ class App
     {
         if ($request->getAction()) {
             return explode('@', $request->getAction());
-        } elseif (property_exists(self::$config, 'defaultAction')) {
+        } elseif (property_exists(self::$config, 'defaultAction' && !$request->isAjax())) {
             return explode('@', self::$config->defaultAction);
         } else {
             throw new Exception('Can\'t parse request');
